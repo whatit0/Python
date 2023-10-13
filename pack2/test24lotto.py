@@ -11,8 +11,15 @@ class LottoMachine:
             self.ballList.append(LottoBall(i))  # 포함관계
 
     def selectBall(self):
+        # 번호를 섞기 전
+        '''for a in range(45):
+            print(self.ballList[a].num, end=' ')
+        print()'''
+        # 번호를 섞은 후
+        random.shuffle(self.ballList)
         for a in range(45):
             print(self.ballList[a].num, end=' ')
+        return  self.ballList[0:6]
 
 
 class LottoUI:
