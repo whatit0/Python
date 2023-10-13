@@ -44,7 +44,7 @@ class Salesman(Regular):
         return self.salary + (self.sales * self.commission)
 
     def data_print(self):
-        print(',수령액:{}'.format(self.pay()))
+        print(', 수령액:{}'.format(self.pay()))
 
 s = Salesman('손오공', 29, 1200000, 5000000, 0.25)
 s.data_print()
